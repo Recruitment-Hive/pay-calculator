@@ -464,18 +464,23 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
                 <div id="benefits-box">
                     <div className="sub-benefit-box">
                         <p>Time Saved</p>
-                        <p style={{ fontSize: '14px', margin: '0px' }}>&#x00AD;</p>
                         <div className="highlighted-value">{mortageData['weeklyTimeSaved']} years</div>
+                        <p style={{ fontSize: '14px', margin: '0px' }}>&#x00AD;</p>
+                    </div>
+                    <div className="sub-benefit-box">
+                        <p>Total Annual Savings</p>
+                        <div className="highlighted-value">{displayMoney(mortageData['weeklyAnnualInterestSavings'])}</div>
+                        <p style={{ fontSize: '14px', margin: '0px' }}>&#x00AD;</p>
                     </div>
                     <div className="sub-benefit-box">
                         <p>Annual Net Savings</p>
-                        <p style={{ fontSize: '14px', margin: '0px' }}><i>(Annual interest savings minus annual Fee)</i></p>
                         <div className="highlighted-value">{displayMoney(mortageData['weeklyAnnualInterestSavings'] - mortageData['yearlyFee'])}</div>
+                        <p style={{ fontSize: '14px', margin: '0px' }}><i>(Annual interest savings minus annual Fee)</i></p>
                     </div>
                     <div className="sub-benefit-box">
                         <p>Total Net Savings</p>
-                        <p style={{ fontSize: '14px', margin: '0px' }}><i>(Total interest savings minus total Fee)</i></p>
                         <div className="highlighted-value">{displayMoney(round(mortageData['weeklyInterestSavings'] - (mortageData['totalFeeSum']), 2))}</div>
+                        <p style={{ fontSize: '14px', margin: '0px' }}><i>(Total interest savings minus total Fee)</i></p>
                     </div>
                 </div>
             </div>
@@ -557,7 +562,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           display: flex;
           justify-content: space-around;
           text-align: center;
-          gap: 80px;
+          gap: 20px;
           padding: 20px;
           width: 100%;
         }
