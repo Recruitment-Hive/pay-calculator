@@ -5,7 +5,6 @@
   text-align: center;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-family: "brandon-grotesque", sans-serif;
   /* --hive-yellow: #fdc333;
   --background-grey: #363636;
   --tax-colour: #71972c;
@@ -13,6 +12,10 @@
   --tax-colour: #ea9f21;
   --yellow-tone-5: #a69370; */
   overflow: hidden;
+}
+
+:root.brandon-grotesque {
+  font-family: "brandon-grotesque", sans-serif;
 }
 
 @keyframes spinAnimation {
