@@ -152,7 +152,7 @@ export default function PayrollPieChart({ data, title }: PayrollPieProps) {
                     ]}
                     sx={{
                         [`& .${pieArcLabelClasses.root}`]: {
-                            fontSize: '12px',
+                            fontSize: '16px',
                             fontWeight: 'bold',
                         },
                     }}

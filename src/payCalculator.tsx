@@ -696,7 +696,7 @@ export default function PayCalculator() {
               max={null}
               lock={false}
             />
-            <p style={{ color: 'black', margin: '0px', paddingBottom: '16px', paddingTop: '16px', fontSize: '18px' }}><i>If you have any questions get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'black', fontWeight: 'bold' }}>here</a></i></p>
+            <p style={{ color: 'black', margin: '0px', paddingBottom: '16px', paddingTop: '16px', fontSize: '22px' }}><i>If you have any questions get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'black', fontWeight: 'bold' }}>here</a></i></p>
           </div>
           {/* <div className='flex-cell'>
             <table className='dropdown-table'>
@@ -964,7 +964,7 @@ export default function PayCalculator() {
                       <SelectField
                         textColour='white'
                         label="Vehicle to Lease"
-                        id="week-or-fortnight"
+                        id=""
                         headerColour='var(--dark-grey)'
                         backgroundColour='var(--dark-grey)'
                         value={novatedLeaseExample}
@@ -1176,7 +1176,7 @@ export default function PayCalculator() {
                     <i>Learn how Hive's weekly pay can help you save money on your Home Loan</i>
                   </a>
                 </div> */}
-                <p style={{ color: 'var(--hive-yellow)', margin: '0px', paddingBottom: '12px', paddingTop: '5px' }}><i>We also offer Living Away From Home Allowance (LAFHA). Get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'var(--hive-yellow)', fontWeight: 'bold' }}>here</a> to learn more.</i></p>
+                <p style={{ color: 'var(--hive-yellow)', margin: '0px', paddingBottom: '12px', paddingTop: '5px', fontSize: '18px' }}><i>We also offer Living Away From Home Allowance (LAFHA). Get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'var(--hive-yellow)', fontWeight: 'bold' }}>here</a> to learn more.</i></p>
               </div>
             </>}
 

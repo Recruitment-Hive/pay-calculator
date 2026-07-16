@@ -1,5 +1,6 @@
 .large-form {
-    margin: 2px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px;
     font-size: 30px;
     background: none;
     border: none;
@@ -47,11 +48,11 @@
 }
 
 .large-form-box p {
-    margin: 5px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
     padding: 0px;
+    margin: 3px 10px;
 }
 
 .large-dark-form-box-header {
@@ -65,7 +66,7 @@
     background-color: var(--hive-yellow);
     height: 40px;
     padding: 1px 0px 0px 5px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     /* border-radius: 20px 20px 0px 0px; */
 }
 
