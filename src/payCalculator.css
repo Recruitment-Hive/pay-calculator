@@ -52,8 +52,8 @@ animation-name: loadingAnimation;
 }
 
 #hive_logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   animation-name: spinAnimation;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -87,7 +87,7 @@ body {
 } */
 
 
-@media (width <=1085px) {
+@media (width <=1165px) {
   .global-div {
     flex-direction: column;
     align-items: center;
@@ -144,7 +144,7 @@ body {
   }
 }
 
-@media (width > 1085px) {
+@media (width > 1165px) {
   .flex-cell {
     margin: 0px 5px;
   }
@@ -187,7 +187,7 @@ body {
   justify-content: center;
   transition: 0.1s all ease;
   color: black;
-  font-size: 18px;
+  font-size: 22px;
   background-color: var(--hive-yellow);
   margin: 13px 0px;
   padding: 6px 10px;
@@ -264,6 +264,12 @@ body {
   /* min-width: 0; */
   box-sizing: border-box;
   margin: 0px 0px 0px 50px;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
 input:focus,
@@ -535,7 +541,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 
@@ -544,7 +550,7 @@ button:focus {
   display: inline-block;
   color: var(--hive-yellow);
   font-style: italic;
-  font-size: 15px;
+  font-size: 18px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
