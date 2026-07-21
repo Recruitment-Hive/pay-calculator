@@ -88,7 +88,7 @@ export default function HomeLoanCalculator() {
                                 headerColour='var(--hive-yellow)'
                                 backgroundColour='rgba(151, 151, 151)'
                                 label={"Loan Amount"}
-                                id='mortage-loan-ammount'
+                                id='123'
                                 value={mortageLoanAmmount}
                                 setFunc={(val) => { setMortageLoanAmmount(val); }}
                                 styling='medium'
@@ -103,7 +103,7 @@ export default function HomeLoanCalculator() {
                                 headerColour='var(--hive-yellow)'
                                 backgroundColour='rgba(151, 151, 151)'
                                 label={"Loan Term (years)"}
-                                id='mortage-loan-ammount'
+                                id='234'
                                 value={mortageTerm}
                                 setFunc={(val) => { setMortageTerm(val); }}
                                 styling='medium'
@@ -118,7 +118,7 @@ export default function HomeLoanCalculator() {
                                 headerColour='var(--hive-yellow)'
                                 backgroundColour='rgba(151, 151, 151)'
                                 label={"Annual Interest Rate"}
-                                id='mortage-loan-ammount'
+                                id='345'
                                 value={mortageInterestRate}
                                 setFunc={(val) => { setMortageInterestRate(val); }}
                                 styling='medium'

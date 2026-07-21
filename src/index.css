@@ -27,6 +27,15 @@
   --tax-colour: #ea9f21;
 }
 
+/* 
+  Palette
+  Golds:      #f1bd54 #f4ca76 #f6d798 #f9e5bb #fcf2dd
+  Mustards:   #bc9642 #caab68 #d7c08e #e4d5b3 #f2ead9
+  Blues:      #7c9fa4 #96b2b7 #b0c5c9 #cad8db #e5eced
+  Dark Blues: #486165 #6c8184 #91a0a3 #b6c0c2 #dadfe0
+  Blacks:     #231f20 #57585a #808285 #a8a9ad #d1d2d4
+*/
+
 a {
   font-weight: 500;
   color: #646cff;
