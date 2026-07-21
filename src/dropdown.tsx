@@ -508,12 +508,12 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           width: 100%;
           max-width: 1100px;
           margin: 0 auto;
-          font-family: sans-serif;
+        //   font-family: sans-serif;
         }
         .mortgage-header {
         //   background-color: #f8f9fa;
           padding: 15px;
-          font-size: 28px;
+          font-size: 34px;
           text-align: center;
           font-weight: bold;
         }
@@ -531,7 +531,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
         .frequency-title {
           padding: 15px;
           text-align: center;
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 600;
         }
         .stats-grid {

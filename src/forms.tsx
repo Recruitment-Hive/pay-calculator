@@ -80,7 +80,7 @@ export function InputField({ id, label, value, setFunc, styling, formatting, min
     return (
         <div className={`${styling}-form-box ${internalLabel}`} style={{ backgroundColor: backgroundColour }}>
             <div style={{ backgroundColor: headerColour }} className={`${styling}-form-box-header ${internalLabel}`}>
-                <p style={{ color: textColour }}>{label}</p>
+                <p style={{ color: textColour, textAlign: 'left' }}>{label}</p>
             </div>
             <input
                 type="text"
@@ -93,7 +93,7 @@ export function InputField({ id, label, value, setFunc, styling, formatting, min
                 onKeyDown={lock ? () => null : handleKeyDown} // Listen for Enter key
                 onFocus={lock ? () => null : (() => setInputValue(String(value)))}
             />
-        </div>
+        </div >
     );
 }
 
