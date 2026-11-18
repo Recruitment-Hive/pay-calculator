@@ -5,6 +5,7 @@ import useToggle from "./hooks/useToggle";
 import { SwitchToggle } from './buttons'
 import { displayMoney, HtmlTooltip, round } from "./functions"
 import { AiFillInfoCircle } from "react-icons/ai";
+import { BiBorderRadius } from "react-icons/bi";
 
 type DropdownProps = {
     label: string;
@@ -77,13 +78,13 @@ export function DropdownTab({ label, contents, subContents, colour }: DropdownPr
 }
 export function DropdownTab2({ label, contents, subContents, colour }: DropdownProps) {
     const [expanded, setExpanded] = useToggle()
-
+    const bottomFormatting = label.includes("bottom") && !expanded ? '0 0 0 10px' : '0'
     return (
         <>
             <div onClick={setExpanded} className={'dropdown row-drop ' + label} style={{ display: 'flex', cursor: 'pointer' }}>
                 <button
                     className={'dropdown-button ' + colour + (expanded ? " expanded" : '')}
-
+                    style={{borderRadius: bottomFormatting}}
                 >
                     {expanded ? <AiFillCaretDown /> : <AiFillCaretUp />}
                 </button>
@@ -96,6 +97,33 @@ export function DropdownTab2({ label, contents, subContents, colour }: DropdownP
     )
 }
 
+export function DropdownTab3({ label, contents, subContents, colour }: DropdownProps) {
+    const [expanded, setExpanded] = useToggle()
+    // const bottomFormatting = label.includes("bottom") && !expanded ? '0 0 0 10px' : '0'
+    return (
+        <>
+            <div onClick={setExpanded} className={'dropdown row-drop ' + label} style={{ display: 'flex', cursor: 'pointer',flexDirection: 'column' }}>
+                
+                <div style={{ flexGrow: 1, display: 'flex', cursor: 'pointer',flexDirection: 'row' }}>
+                    <button
+                        className={'dropdown-button ' + colour + (expanded ? " expanded" : '')}
+                    >
+                        {expanded ? <AiFillCaretDown /> : <AiFillCaretUp />}
+                    </button>
+                    {contents}
+                   
+                </div>
+                <div className={'dropdown-subdiv ' + (expanded ? "expanded " : '') + label}>
+                    {subContents}
+                </div>
+            </div>
+            <div style={{background: 'var(--hive-yellow)', borderRadius: '0 0 10px 10px', height:'10px'}}> 
+                
+            </div>
+        </>
+    )
+}
+
 export function SummaryTab({ label, daily, weekly, fortnightly, monthly, yearly }: SummmaryTabProps) {
     return (
         <>
@@ -103,7 +131,7 @@ export function SummaryTab({ label, daily, weekly, fortnightly, monthly, yearly 
                 <tbody>
                     <tr>
                         <td>
-                            <div className="summary-label">{label}</div>
+                            <div className="summary-label" >{label}</div>
                         </td>
                         <td>
                             <div className="summary-tab-amount">${daily}</div>
@@ -268,14 +296,14 @@ export function IncomeTable({ items, totals, oldTax, totalItems }: IncomeProps) 
             <table className="income-table">
                 <thead >
                     <tr className="income-table-header">
-
-                        <td style={{ width: '20px' }}></td>
-                        <td>Weekly</td>
+                        
+                        <td style={{marginLeft:"20px", borderRadius: '10px 0 0 0'}}></td>
+                        <td style={{ paddingLeft: '20px' }}>Weekly</td>
                         {/* <td>
                         Fortnightly
                     </td> */}
                         <td>Monthly</td >
-                        <td>Annually</td>
+                        <td style={{borderRadius: '0 10px 0 0'}}>Annually</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -372,13 +400,13 @@ export function IncomeTable({ items, totals, oldTax, totalItems }: IncomeProps) 
             </table >
             {
 
-                <DropdownTab2 label="row-drop"
+                <DropdownTab3 label="row-drop bottom"
                     colour="yellow"
                     contents={
                         <table className="income-takehome-table">
                             <tbody>
                                 <tr className="income-table-takehome-row">
-                                    <td className="income-table-takehome label">Take-Home Pay</td>
+                                    <td className="income-table-takehome label" >Take-Home Pay</td>
                                     <td className="income-table-takehome">{totals[1]}</td>
                                     {/* <td className="income-table-takehome-cell">{totals[2]}</td> */}
                                     <td className="income-table-takehome">{totals[3]}</td>

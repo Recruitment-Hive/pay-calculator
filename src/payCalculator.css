@@ -178,7 +178,7 @@ body {
 }
 
 #mortage-link:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 #mortage-link {
@@ -191,7 +191,7 @@ body {
   background-color: var(--hive-yellow);
   margin: 13px 0px;
   padding: 6px 10px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 /* #mortage-link-box:hover a {
@@ -360,6 +360,14 @@ button:focus {
 
 }
 
+.link-hover {
+  transition: 0.2s text-decoration;
+}
+
+.link-hover:hover {
+  text-decoration: underline;
+}
+
 .pretax-savings {
   color: var(--hive-yellow);
   font-weight: bold;
@@ -374,6 +382,7 @@ button:focus {
 
 .pretax-savings__inner {
   overflow: hidden;
+  font-weight: 500;
 }
 
 #chart-section {
@@ -428,7 +437,7 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
 
 
   /* flex-direction: row; */
@@ -465,11 +474,11 @@ button:focus {
 
 
 #payroll-button {
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   background-color: var(--hive-yellow);
   border: var(--hive-yellow) 4px solid;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px;
   margin: 10px;
   transition: all 0.2s;
@@ -480,7 +489,7 @@ button:focus {
   font-weight: bold;
   background-color: black;
   border: var(--hive-yellow) 4px solid;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px;
   margin: 10px;
 }
@@ -517,6 +526,7 @@ button:focus {
   display: inline-block;
   margin: 5px 0px 0px 0px;
   color: var(--hive-yellow);
+  font-weight: 500;
 }
 
 .payroll-options {
@@ -556,13 +566,13 @@ button:focus {
 }
 
 #hive-benefits {
-  --c: #fdc333;
+  --c: #F1BD54;
   /* the border color */
   --b: 11px;
   /* the border thickness*/
   --g: 5px;
   /* the gap on hover */
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px 5px 5px 5px;
   --_g: #0000 25%, var(--c) 0;
   background:
@@ -592,7 +602,7 @@ button:focus {
     conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
     conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
   transition: .3s, background-position .3s;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   /* padding: 0px 5px */
 }
@@ -600,7 +610,7 @@ button:focus {
 .dropdown.row-drop.Payroll:hover {
   --_i: 100%;
   transition: .3s, background-size .3s .3s;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .dropdown.row-drop.Payroll.open {

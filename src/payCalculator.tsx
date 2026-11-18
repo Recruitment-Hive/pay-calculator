@@ -696,7 +696,7 @@ export default function PayCalculator() {
               max={null}
               lock={false}
             />
-            <p style={{ color: 'black', margin: '0px', paddingBottom: '16px', paddingTop: '16px', fontSize: '22px' }}><i>If you have any questions get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'black', fontWeight: 'bold' }}>here</a></i></p>
+            <p style={{ color: 'black', margin: '0px', paddingBottom: '16px', paddingTop: '16px', fontSize: '22px' }}><i>If you have any questions get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'black', fontWeight: 'bold' }} className='link-hover'>here</a></i></p>
           </div>
           {/* <div className='flex-cell'>
             <table className='dropdown-table'>
@@ -930,7 +930,7 @@ export default function PayCalculator() {
         </div>
         <div id='hive-benefits'>
           <DropdownTab
-            colour='black'
+            colour='#010101'
             label={'Benefits'}
             contents={
               <>
@@ -987,7 +987,7 @@ export default function PayCalculator() {
                           overflowWrap: 'anywhere',
                           whiteSpace: 'normal'
                         }}><i>These estimates are from our partner <a href='https://www.allianceleasing.com.au/' target='_blank' style={{ color: 'rgb(0, 184, 0)' }}>Alliance Leasing</a>.</i></p>
-                        <a href='https://www.recruitmenthive.com.au/novated-lease-form/' target='_blank' style={{ color: 'var(--hive-yellow)' }}>Learn more here</a>
+                        <a href='https://www.recruitmenthive.com.au/novated-lease-form/' target='_blank' style={{ color: 'var(--hive-yellow)' }} className='link-hover'>Learn more here</a>
                       </div>
                     </div>}
                     toggleFunc={setHasNovatedLease}
@@ -1067,7 +1067,7 @@ export default function PayCalculator() {
                     infoTag={<HtmlTooltip
                       title={
                         <>
-                          <b>Super Salary Sacrifise</b> is where you voluntarily contribute a portion of your pay to your Superannuation fund. If your annual contributions are under $30,000, you can make contributions Pre-Tax. Learn more <a href='https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/how-to-save-more-in-your-super/salary-sacrificing-super'>here</a>.
+                          <b>Super Salary Sacrifise</b> is where you voluntarily contribute a portion of your pay to your Superannuation fund. If your annual contributions are under $30,000, you can make contributions Pre-Tax. Learn more <a href='https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/how-to-save-more-in-your-super/salary-sacrificing-super' className='link-hover'>here</a>.
                         </>
                       }
                       slotProps={{
@@ -1133,7 +1133,7 @@ export default function PayCalculator() {
                           The value of work expenses (minus GST) can be deducted from your Taxable Income to lower your tax.
                           <br></br>
                           A comprehensive list of deductables can be found
-                          <a href="https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions" target="_blank"> here</a>
+                          <a href="https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions" target="_blank" className='link-hover'> here</a>
                         </>
                       }
                       slotProps={{
@@ -1170,13 +1170,13 @@ export default function PayCalculator() {
                   </a>
                 </div>
               </div> */}
-              <div style={{ background: 'black', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ background: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 {/* <div id='mortage-link-box'>
                   <a id='mortage-link' target='_blank' href='https://www.recruitmenthive.com.au/mortage-savings-calculator/'>
                     <i>Learn how Hive's weekly pay can help you save money on your Home Loan</i>
                   </a>
                 </div> */}
-                <p style={{ color: 'var(--hive-yellow)', margin: '0px', paddingBottom: '12px', paddingTop: '5px', fontSize: '18px' }}><i>We also offer Living Away From Home Allowance (LAFHA). Get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'var(--hive-yellow)', fontWeight: 'bold' }}>here</a> to learn more.</i></p>
+                <p style={{ color: 'var(--hive-yellow)', margin: '0px', paddingBottom: '12px', paddingTop: '5px', fontSize: '18px' }}><i>We also offer Living Away From Home Allowance (LAFHA). Get in touch with our accounts team <a href='mailto:accounts@recruitmenthive.com.au' target='_blank' style={{ color: 'var(--hive-yellow)', fontWeight: 'bold' }} className='link-hover'>here</a> to learn more.</i></p>
               </div>
             </>}
 

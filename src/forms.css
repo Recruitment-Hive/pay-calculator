@@ -49,7 +49,7 @@
 
 .large-form-box p {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 500;
     color: black;
     padding: 0px;
     margin: 3px 10px;
@@ -71,35 +71,35 @@
 }
 
 .large-form-box.week-or-fortnight {
-    border-radius: 20px 20px 20px 0px;
+    border-radius: 10px 10px 10px 0px;
 }
 
 .large-form-box.pay-cycle {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .large-form-box.salary {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .large-form-box-header.salary {
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .large-form-box-header.pay-cycle {
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .large-form-box-header.work-hours {
-    border-radius: 20px 0px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
 }
 
 .large-form-box.work-hours {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .large-form-box-header.week-or-fortnight {
-    border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 10px 0px 0px;
 }
 
 .large-form {
@@ -152,7 +152,7 @@ S .medium-form-box {
 .medium-form-box p {
     margin: 0px 0px 0px 5px;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 500;
     color: black;
     padding: 0px;
     padding: 0px 10px 0px 0px;

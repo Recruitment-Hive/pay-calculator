@@ -12,11 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --hive-yellow: #fdc333;
+  --hive-yellow: #F1BD54;
   --yellow-tone-1: #ecb944;
-  --yellow-tone-5: #a69370;
+  --yellow-tone-5: #a49267;
+  /* a69370 */
   --yellow-tint-5: #ffdc91;
-  --income-table-backing: #6d6d6d;
+  --income-table-backing: #a49267;
+  /* 6d6d6d */
   --income-subtable-backing: #3f3f3f;
   --grey: #575757;
   --dark-grey: #272727;
@@ -60,7 +62,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
