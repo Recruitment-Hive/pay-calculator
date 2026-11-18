@@ -5,7 +5,7 @@ import useToggle from "./hooks/useToggle";
 import { SwitchToggle } from './buttons'
 import { displayMoney, HtmlTooltip, round } from "./functions"
 import { AiFillInfoCircle } from "react-icons/ai";
-import { BiBorderRadius } from "react-icons/bi";
+// import { BiBorderRadius } from "react-icons/bi";
 
 type DropdownProps = {
     label: string;
