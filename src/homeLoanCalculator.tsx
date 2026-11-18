@@ -81,84 +81,85 @@ export default function HomeLoanCalculator() {
                     <p style={{ color: 'black', textAlign: 'left', margin: '0px 20px' }}><b>"Accelerated" repayments</b> allow you to repay your mortage weekly, saving <b>time</b> and <b>money</b>. Hive's Weekly pay option can help you make these weekly repayments. See below how much you can save.</p>
                 </div> */}
                 <div style={{ padding: '0px 20px 5px 20px' }}>
-                    <div id='mortage-dropdown'>
-                        <div id='mortage-input'>
-                            <InputField
-                                textColour='white'
-                                headerColour='var(--hive-yellow)'
-                                backgroundColour='rgba(151, 151, 151)'
-                                label={"Loan Amount"}
-                                id='123'
-                                value={mortageLoanAmmount}
-                                setFunc={(val) => { setMortageLoanAmmount(val); }}
-                                styling='medium'
-                                formatting={'monetary'}
-                                rounding={2}
-                                min={0}
-                                max={null}
-                                lock={false}
-                            />
-                            <InputField
-                                textColour='white'
-                                headerColour='var(--hive-yellow)'
-                                backgroundColour='rgba(151, 151, 151)'
-                                label={"Loan Term (years)"}
-                                id='234'
-                                value={mortageTerm}
-                                setFunc={(val) => { setMortageTerm(val); }}
-                                styling='medium'
-                                formatting={'number'}
-                                rounding={2}
-                                min={0}
-                                max={null}
-                                lock={false}
-                            />
-                            <InputField
-                                textColour='white'
-                                headerColour='var(--hive-yellow)'
-                                backgroundColour='rgba(151, 151, 151)'
-                                label={"Annual Interest Rate"}
-                                id='345'
-                                value={mortageInterestRate}
-                                setFunc={(val) => { setMortageInterestRate(val); }}
-                                styling='medium'
-                                formatting={'percentage'}
-                                rounding={2}
-                                min={0}
-                                max={null}
-                                lock={false}
-                            />
+                    <div id='mortage-dropdown' >
+                        <div >
+                            <div id='mortage-input'>
+                                <InputField
+                                    textColour='white'
+                                    headerColour='var(--hive-yellow)'
+                                    backgroundColour='var(--yellow-tone-5)'
+                                    label={"Loan Amount"}
+                                    id='123'
+                                    value={mortageLoanAmmount}
+                                    setFunc={(val) => { setMortageLoanAmmount(val); }}
+                                    styling='medium'
+                                    formatting={'monetary'}
+                                    rounding={2}
+                                    min={0}
+                                    max={null}
+                                    lock={false}
+                                />
+                                <InputField
+                                    textColour='white'
+                                    headerColour='var(--hive-yellow)'
+                                    backgroundColour='var(--yellow-tone-5)'
+                                    label={"Loan Term (years)"}
+                                    id='234'
+                                    value={mortageTerm}
+                                    setFunc={(val) => { setMortageTerm(val); }}
+                                    styling='medium'
+                                    formatting={'number'}
+                                    rounding={2}
+                                    min={0}
+                                    max={null}
+                                    lock={false}
+                                />
+                                <InputField
+                                    textColour='white'
+                                    headerColour='var(--hive-yellow)'
+                                    backgroundColour='var(--yellow-tone-5)'
+                                    label={"Annual Interest Rate"}
+                                    id='345'
+                                    value={mortageInterestRate}
+                                    setFunc={(val) => { setMortageInterestRate(val); }}
+                                    styling='medium'
+                                    formatting={'percentage'}
+                                    rounding={2}
+                                    min={0}
+                                    max={null}
+                                    lock={false}
+                                />
 
-                            {/* <SwitchToggle
-                                dropdown={false}
-                                label="Accelerated repayments"
-                                description={''}
-                                setFunc={setMortagePayFreq}
-                                infoTag={null}
-                            /> */}
-                        </div>
-                        <br></br>
-                        <div id='salary-box'>
-                            <InputField
-                                textColour='white'
-                                headerColour='var(--hive-yellow)'
-                                backgroundColour='rgba(151, 151, 151)'
-                                label={"Hourly Rate (including super)"}
-                                id='hourly-rate'
-                                value={hourlyRate}
-                                setFunc={(val) => { setHourlyRate(val); }}
-                                styling='medium'
-                                formatting={'monetary'}
-                                rounding={2}
-                                min={0}
-                                max={null}
-                                lock={false}
-                            />
-                            <p style={{ fontSize: '17px' }}><i>Recruitment Hive's weekly pay has a 1% fee (Monthly Pay has no fee)</i></p>
+                                {/* <SwitchToggle
+                                    dropdown={false}
+                                    label="Accelerated repayments"
+                                    description={''}
+                                    setFunc={setMortagePayFreq}
+                                    infoTag={null}
+                                /> */}
+                                <InputField
+                                    textColour='white'
+                                    headerColour='var(--hive-yellow)'
+                                    backgroundColour='var(--yellow-tone-5)'
+                                    label={"Hourly Rate (including super)"}
+                                    id='hourly-rate'
+                                    value={hourlyRate}
+                                    setFunc={(val) => { setHourlyRate(val); }}
+                                    styling='medium'
+                                    formatting={'monetary'}
+                                    rounding={2}
+                                    min={0}
+                                    max={null}
+                                    lock={false}
+                                />
+                            </div>
+                            <div id='salary-box'>
+                                
+                                <p style={{ fontSize: '17px' }}><i>Recruitment Hive's weekly pay has a 1% fee (Monthly Pay has no fee)</i></p>
 
+                            </div>
                         </div>
                         <MortageRepaymentTable mortageData={mortageData} monthlyPayment={mortagePayFreq} />
-                        <br></br>
 
                     </div>
                 </div>

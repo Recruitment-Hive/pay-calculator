@@ -522,6 +522,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
             }
             #savings-header {
                 width: fit-content;
+                font-weight: 500;
             }
             #mortage-dropdown {
                 justify-content: center;
@@ -543,7 +544,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           padding: 15px;
           font-size: 34px;
           text-align: center;
-          font-weight: bold;
+          font-weight: 500;
         }
         .comparison-flex {
           display: flex;
@@ -560,7 +561,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           padding: 15px;
           text-align: center;
           font-size: 24px;
-          font-weight: 600;
+          font-weight: 500;
         }
         .stats-grid {
           display: grid;
@@ -572,7 +573,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           flex-direction: column;
         }
         .value {
-          font-weight: 600;
+          font-weight: 500;
           margin-top: 5px;
         }
         .highlighted-text {
@@ -581,7 +582,7 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
         .highlighted-value {
           color: var(--hive-yellow);
           font-size: 28px;
-          font-weight: 600;
+          font-weight: 500;
         }
         .border-right { border-right: 2px solid var(--hive-yellow); }
         .border-top { border-top: 2px solid var(--hive-yellow); }
