@@ -25,9 +25,32 @@
   --dark-grey: #272727;
   --toggle-button-background: #363636;
 
+  /* Calc colours */
+  --pay-colour: #7f9a4b;
+  --tax-colour: #e0a43c;
+  --super-colour: #5eabc5;
+  --div293tax-colour: #ea5a21;
+  --medicare-colour: #81d100;
+  --studentloan-colour: #d100b5;
+  --voluntarysuper-colour: #256f88;
+  --mortage-colour: #a30101;
+  --workdeductions-colour: #00b300;
+  --novatedleaseposttax-colour: #ff7300;
+
+    /* overflow: hidden; */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #EFEFEF;
+  color: rgb(0, 0, 0);
+  font-family: "brandon-grotesque", sans-serif;
+  /* --hive-yellow: #fdc333;
+  --background-grey: #363636;
   --tax-colour: #71972c;
   --super-colour: #33a2c6;
   --tax-colour: #ea9f21;
+  --yellow-tone-5: #a69370; */
+  overflow: hidden;
 }
 
 /* 

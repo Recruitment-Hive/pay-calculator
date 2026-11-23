@@ -14,6 +14,24 @@ import { AiFillInfoCircle, AiOutlineArrowRight } from "react-icons/ai";
 //   subrow: any[];
 // }
 
+const rootStyles = window.getComputedStyle(document.documentElement);
+// Pallette
+var basePayColour = rootStyles.getPropertyValue('--pay-colour').trim();
+var superMainColour = rootStyles.getPropertyValue('--super-colour').trim();
+var taxMainColour = rootStyles.getPropertyValue('--tax-colour').trim();
+var div293TaxColour = rootStyles.getPropertyValue('--div293tax-colour').trim();
+var medicareColour = rootStyles.getPropertyValue('--medicare-colour').trim();
+var studentLoanColour = rootStyles.getPropertyValue('--studentloan-colour').trim();
+var voluntarySuperColour = rootStyles.getPropertyValue('--voluntarysuper-colour').trim();
+var mortageColour = rootStyles.getPropertyValue('--mortage-colour').trim();
+var workDeductionsColour = rootStyles.getPropertyValue('--mortage-colour').trim();
+var novatedLeasePostTaxColour = rootStyles.getPropertyValue('--novatedleaseposttax-colour').trim();
+
+
+
+
+
+
 export default function PayCalculator() {
   // 1. Define the function to report the height
   const notifyParent = () => {
@@ -604,45 +622,45 @@ export default function PayCalculator() {
     let payrollData = [{
       id: 'take-home',
       label: 'Pay',
-      color: '#71972c',
-      subCategories: [{ id: 'base-pay', label: 'Take-Home pay', value: Number(basePay), color: '#71972c' }],
+      color: basePayColour,
+      subCategories: [{ id: 'base-pay', label: 'Take-Home pay', value: Number(basePay), color: basePayColour }],
     },
     {
       id: 'tax',
       label: 'Tax',
-      color: '#ea9f21',
-      subCategories: [{ id: 'income-tax', label: 'Income Tax', value: Number(taxSplit['incomeTax'][4]), color: '#ea9f21' }],
+      color: taxMainColour,
+      subCategories: [{ id: 'income-tax', label: 'Income Tax', value: Number(taxSplit['incomeTax'][4]), color: taxMainColour }],
     },
     {
       id: 'super',
       label: 'Super',
-      color: '#33a2c6',
-      subCategories: [{ id: 'employer-cont', label: 'Employer contribution', color: '#35a0c4', value: Number(employerContribution[4]) }],
+      color: superMainColour,
+      subCategories: [{ id: 'employer-cont', label: 'Employer contribution', color: superMainColour, value: Number(employerContribution[4]) }],
     }]
     // if (hasBonus) {
     //   payrollData[0].subCategories.push({ id: 'bonus', label: 'Bonus', value: Number(bonus), color: '#5f7e25' });
     // }
     if (taxSplit['293'][4] > 0) {
-      payrollData[1].subCategories.push({ id: '293', label: 'Division 293', value: Number(taxSplit['293'][4]), color: '#ea5a21' });
+      payrollData[1].subCategories.push({ id: '293', label: 'Division 293', value: Number(taxSplit['293'][4]), color: div293TaxColour });
     }
     if (taxSplit['medicare'][4] > 0 && Number(taxSplit['incomeTax'][4]) - adjustedLITO > 0) {
-      payrollData[1].subCategories.push({ id: 'medicare', label: 'Medicare Levy', value: Number(taxSplit['medicare'][4]), color: '#81d100' });
+      payrollData[1].subCategories.push({ id: 'medicare', label: 'Medicare Levy', value: Number(taxSplit['medicare'][4]), color: medicareColour });
     }
     if (hasStudentLoan && currentTax['HECS'] > 0) {
-      payrollData[1].subCategories.push({ id: 'student-loan', label: 'Student Loan', value: Number(currentTax['HECS']), color: '#d100b5' });
+      payrollData[1].subCategories.push({ id: 'student-loan', label: 'Student Loan', value: Number(currentTax['HECS']), color: studentLoanColour });
     }
     if (hasSuperSalarySacrifise && superContribution > 0) {
-      payrollData[2].subCategories.push({ id: 'voluntary', label: 'Voluntary Contribution', value: Number(superContribution), color: '#256f88' });
+      payrollData[2].subCategories.push({ id: 'voluntary', label: 'Voluntary Contribution', value: Number(superContribution), color: voluntarySuperColour });
     }
     if (hasMortage) {
-      payrollData[0].subCategories.push({ id: 'mortage', label: 'Mortage Repayments', value: Number(mortageAnnualPayments), color: '#a30101' });
+      payrollData[0].subCategories.push({ id: 'mortage', label: 'Mortage Repayments', value: Number(mortageAnnualPayments), color: mortageColour });
     }
     if (hasWorkDeductions && workDeductablesAmount > 0) {
-      payrollData[0].subCategories.push({ id: 'work-deducts', label: 'Work Deductions', value: Number(workDeductablesAmount), color: '#00b300' });
+      payrollData[0].subCategories.push({ id: 'work-deducts', label: 'Work Deductions', value: Number(workDeductablesAmount), color: workDeductionsColour });
     }
     if (hasNovatedLease) {
       if (-novatedLeasePostTax[4] > 0) {
-        payrollData[0].subCategories.push({ id: 'novatedLease', label: 'Novated Lease Post-Tax', value: Number(-novatedLeasePostTax[4]), color: '#ff7300' });
+        payrollData[0].subCategories.push({ id: 'novatedLease', label: 'Novated Lease Post-Tax', value: Number(-novatedLeasePostTax[4]), color: novatedLeasePostTaxColour });
       }
     }
 

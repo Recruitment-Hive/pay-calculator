@@ -155,6 +155,10 @@ export default function PayrollPieChart({ data, title }: PayrollPieProps) {
                             fontSize: '16px',
                             fontWeight: 'bold',
                         },
+                        '& .MuiPieArc-root': {
+                            stroke: '#ff000000',
+                            strokeWidth: 2,
+                        },
                     }}
                     slotProps={{
                         // legend: {

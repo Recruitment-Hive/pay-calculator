@@ -1,11 +1,3 @@
-:root {
-    --hive-yellow: #F1BD54;
-    /* --toggle-button-background: #363636; */
-    --tax-colour: #71972c;
-    --super-colour: #33a2c6;
-    --tax-colour: #ea9f21;
-}
-
 .switch {
     position: relative;
     display: inline-block;
