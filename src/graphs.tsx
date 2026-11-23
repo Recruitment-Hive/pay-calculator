@@ -152,8 +152,8 @@ export default function PayrollPieChart({ data, title }: PayrollPieProps) {
                     ]}
                     sx={{
                         [`& .${pieArcLabelClasses.root}`]: {
-                            fontSize: '16px',
-                            fontWeight: 'bold',
+                            fontSize: '18px',
+                            fontWeight: '500',
                         },
                         '& .MuiPieArc-root': {
                             stroke: '#ff000000',
