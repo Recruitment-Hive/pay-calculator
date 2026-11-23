@@ -13,6 +13,12 @@ type DropdownProps = {
     subContents: any;
     colour: string;
 }
+type DropdownProps3 = {
+    label: string;
+    subContents: any;
+    colour: string;
+    totals: string[];
+}
 
 type ToggleDropdownProps = {
     label: string;
@@ -97,27 +103,37 @@ export function DropdownTab2({ label, contents, subContents, colour }: DropdownP
     )
 }
 
-export function DropdownTab3({ label, contents, subContents, colour }: DropdownProps) {
+export function DropdownTab3({ label, subContents, colour, totals }: DropdownProps3) {
     const [expanded, setExpanded] = useToggle()
     // const bottomFormatting = label.includes("bottom") && !expanded ? '0 0 0 10px' : '0'
     return (
         <>
             <div onClick={setExpanded} className={'dropdown row-drop ' + label} style={{ display: 'flex', cursor: 'pointer',flexDirection: 'column' }}>
                 
-                <div style={{ flexGrow: 1, display: 'flex', cursor: 'pointer',flexDirection: 'row' }}>
+                <div style={{ flexGrow: 1, display: 'flex', cursor: 'pointer',flexDirection: 'row' }} className={"dropdownTab3header" + (expanded ? " expanded" : '')}>
                     <button
-                        className={'dropdown-button ' + colour + (expanded ? " expanded" : '')}
+                        className={'dropdown-button three ' + colour + (expanded ? " expanded" : '')}
                     >
                         {expanded ? <AiFillCaretDown /> : <AiFillCaretUp />}
                     </button>
-                    {contents}
+                    <table className="income-takehome-table">
+                        <tbody>
+                            <tr className="income-table-takehome-row">
+                                <td className="income-table-takehome label" >Take-Home Pay</td>
+                                <td className="income-table-takehome">{totals[1]}</td>
+                                {/* <td className="income-table-takehome-cell">{totals[2]}</td> */}
+                                <td className="income-table-takehome">{totals[3]}</td>
+                                <td className={"income-table-takehome bottom-right"+ (expanded ? " expanded" : '')}>{totals[4]}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                    
                 </div>
                 <div className={'dropdown-subdiv ' + (expanded ? "expanded " : '') + label}>
                     {subContents}
                 </div>
             </div>
-            <div style={{background: 'var(--hive-yellow)', borderRadius: '0 0 10px 10px', height:'10px'}}> 
+            <div style={{background: 'var(--hive-yellow)', borderRadius: '0 0 10px 10px', height:'10px', position: 'relative', zIndex: 10}}> 
                 
             </div>
         </>
@@ -402,19 +418,8 @@ export function IncomeTable({ items, totals, oldTax, totalItems }: IncomeProps) 
 
                 <DropdownTab3 label="row-drop bottom"
                     colour="yellow"
-                    contents={
-                        <table className="income-takehome-table">
-                            <tbody>
-                                <tr className="income-table-takehome-row">
-                                    <td className="income-table-takehome label" >Take-Home Pay</td>
-                                    <td className="income-table-takehome">{totals[1]}</td>
-                                    {/* <td className="income-table-takehome-cell">{totals[2]}</td> */}
-                                    <td className="income-table-takehome">{totals[3]}</td>
-                                    <td className="income-table-takehome">{totals[4]}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    } subContents={takehomeSubRows}
+                    totals={totals}
+                    subContents={takehomeSubRows}
                 />
             }
 

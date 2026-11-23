@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+.income-table-takehome.bottom-right {
+    border-radius: 0 0 10px 0;
+}
+
+.income-table-takehome.bottom-right.expanded {
+    border-radius: 0 0 0px 0;
+}
+
 .label {
     padding: 12px 15px;
     text-align: left;
@@ -733,6 +741,25 @@ select>option {
 
 .mortage-table-header {
     font-size: 20px;
+}
+
+.dropdown-button.three {
+    height: 57.5px !important;
+    border-radius: 0 0 0 10px;
+}
+
+.dropdown-button.three.expanded {
+    /* height: 57.5px !important; */
+    border-radius: 0 0 0 0;
+}
+
+.dropdownTab3header {
+    height: 47.5px;
+    transition: height ease 0.3s;
+}
+
+.dropdownTab3header.expanded {
+    height: 57.5px;
 }
 
 .sub-benefit-box {
