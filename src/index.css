@@ -6,6 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+
   /* background-color: #242424; */
 
   font-synthesis: none;
@@ -43,7 +44,8 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-color: #EFEFEF;
+  background-color: #FAE8C1;
+  /* Pale Yellow #FAE8C1 #EFEFEF */
   color: rgb(0, 0, 0);
   font-family: "brandon-grotesque", sans-serif;
   /* --hive-yellow: #fdc333;
