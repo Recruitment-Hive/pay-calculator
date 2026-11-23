@@ -14,7 +14,7 @@
 }
 
 .toggle-table {
-    border-bottom: #fdc333 2px solid;
+    border-bottom: var(--hive-yellow) 2px solid;
 
 }
 

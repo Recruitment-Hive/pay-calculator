@@ -361,7 +361,7 @@ select>option {
     width: 20px;
     height: 60px;
     border-radius: 20px;
-    background-color: #71972c;
+    background-color: var(--pay-colour);
     margin: 5px 5px 5px 10px;
     text-align: left;
 }
@@ -370,7 +370,7 @@ select>option {
     width: 20px;
     height: 60px;
     border-radius: 20px;
-    background-color: #33a2c6;
+    background-color: var(--super-colour);
     margin: 5px 5px 5px 10px;
 }
 
@@ -378,7 +378,7 @@ select>option {
     width: 20px;
     height: 60px;
     border-radius: 20px;
-    background-color: #ea9f21;
+    background-color: var(--tax-colour);
     margin: 5px 5px 5px 10px;
 }
 
@@ -386,7 +386,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #71972c;
+    background-color: var(--pay-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -402,7 +402,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #ea9f21;
+    background-color: var(--tax-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -410,7 +410,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #256f88;
+    background-color: var(--voluntarysuper-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -418,7 +418,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #256f88;
+    background-color: var(--nonvoluntarysuper-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -426,7 +426,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #81d100;
+    background-color: var(--medicare-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -434,7 +434,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #ea5a21;
+    background-color: var(--div293tax-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -442,7 +442,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #d100b5;
+    background-color: var(--studentloan-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -450,7 +450,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #815912;
+    background-color: var(--lito-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -458,7 +458,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #35a0c4;
+    background-color: var(--super-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -474,7 +474,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #256f88;
+    background-color: var(--voluntarysuper-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -482,7 +482,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #ff7300;
+    background-color: var(--voluntarysuper-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -490,7 +490,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #ff7300;
+    background-color: var(--voluntarysuper-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -498,7 +498,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #00b300;
+    background-color: var(--workdeductions-colour);
     margin: 5px 5px 5px 0px;
 }
 
@@ -506,7 +506,7 @@ select>option {
     width: 20px;
     height: 40px;
     border-radius: 20px;
-    background-color: #a30101;
+    background-color: var(--mortage-colour);
     margin: 5px 5px 5px 0px;
 }
 
