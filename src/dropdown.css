@@ -773,15 +773,15 @@ select>option {
 }
 
 .sub-benefit-box p {
-    color: black
+    color: white;
 }
 
 #savings-box {
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 30px;
+    /* background-color: rgba(0, 0, 0, 0); */
+    /* border-radius: 30px; */
     /* border: 5px solid var(--hive-yellow); */
-    padding: 5px;
-    margin-top: 15px;
+    /* padding: 5px; */
+    margin-top: 30px;
     /* width: fit-content; */
 }
 
@@ -807,7 +807,7 @@ select>option {
     font-weight: bold;
     font-size: 30px;
     padding: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #benefits-box {

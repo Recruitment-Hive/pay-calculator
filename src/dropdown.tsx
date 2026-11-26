@@ -446,13 +446,13 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
 
                 {/* Monthly Column */}
                 <div className="comparison-column border-right">
-                    <div className="frequency-title">Monthly</div>
-                    <div className="stats-grid">
-                        <div className="stat-item border-top">
+                    <div className="frequency-title" style={{borderRadius: '10px 0 0 0'}}>Monthly</div>
+                    <div className="stats-grid" style={{borderRadius: '0 0 0 10px'}}>
+                        <div className="stat-item">
                             <span>Repayment</span>
                             <div className="value">{displayMoney(mortageData['montlyRepaymentAmmount'])}</div>
                         </div>
-                        <div className="stat-item border-top">
+                        <div className="stat-item">
                             <span>Loan Duration</span>
                             <div className="value">{mortageData['loanTerm']} years</div>
                         </div>
@@ -469,13 +469,13 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
 
                 {/* Weekly Column */}
                 <div className="comparison-column">
-                    <div className="frequency-title">Weekly</div>
-                    <div className="stats-grid">
-                        <div className="stat-item border-top">
+                    <div className="frequency-title" style={{borderRadius: '0 10px 0 0'}}>Weekly</div>
+                    <div className="stats-grid" style={{borderRadius: '0 0 10px 0'}}>
+                        <div className="stat-item">
                             <span>Repayment</span>
                             <div className="value">{displayMoney(mortageData['weeklyRepaymentAmmount'])}</div>
                         </div>
-                        <div className="stat-item border-top">
+                        <div className="stat-item">
                             <span>Loan Duration</span>
                             <div className="value highlighted-text">{mortageData['weeklyPayedOffIn']} years</div>
                         </div>
@@ -524,10 +524,14 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // background-color: var(--yellow-tone-5);
             }
             #savings-header {
                 width: fit-content;
                 font-weight: 500;
+                background-color: var(--hive-yellow);
+                width: 100%;
+                border-radius: 10px 10px 0 0;
             }
             #mortage-dropdown {
                 justify-content: center;
@@ -550,10 +554,12 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           font-size: 34px;
           text-align: center;
           font-weight: 500;
+          color: white;
         }
         .comparison-flex {
           display: flex;
           flex-wrap: wrap;
+        //   background-color: var(--yellow-tone-5);
         //   border: 1px solid #ddd;
         }
         .comparison-column {
@@ -566,11 +572,15 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           padding: 15px;
           text-align: center;
           font-size: 24px;
+          color: white;
           font-weight: 500;
+          background-color: var(--hive-yellow);
         }
         .stats-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          color: white;
+          background-color: var(--yellow-tone-5);
         }
         .stat-item {
           padding: 15px;
@@ -599,9 +609,13 @@ export function MortageRepaymentTable({ mortageData }: MortageProps) {
           gap: 20px;
           padding: 20px;
           width: 100%;
+          background-color: var(--yellow-tone-5);
+          border-radius: 0 0 10px 10px;
+
         }
         .sub-benefit-box {
             width: 120%;
+
         }
         /* Mobile Adjustments */
         @media (max-width: 654px) {
