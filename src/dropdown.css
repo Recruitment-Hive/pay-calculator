@@ -728,8 +728,12 @@ select>option {
 }
 
 .value {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 600;
+}
+
+.stat-item {
+    font-size: 1.3rem;
 }
 
 .mortage-table td {
@@ -815,7 +819,7 @@ select>option {
 }
 
 #benefits-box p {
-    font-size: 22px;
+    font-size: 1.3rem;
     margin: 5px;
     margin-bottom: 0px;
     
